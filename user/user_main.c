@@ -1,4 +1,4 @@
-#include "ws2812.h"
+#include "ws2801.h"
 #include "tpm2net.h"
 
 void user_init(void)
@@ -7,7 +7,7 @@ void user_init(void)
 	wifi_station_dhcpc_start();
 
 	tpm2net_init();
-	ws2812_init();
+	ws2801_init();
 }
 
 
